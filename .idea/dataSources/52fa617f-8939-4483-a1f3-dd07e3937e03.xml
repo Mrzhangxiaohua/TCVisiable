@@ -19,7 +19,7 @@
     <table id="11" parent="2" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="12" parent="2" name="studentinfo"/>
+    <table id="12" parent="2" name="student_info"/>
     <table id="13" parent="2" name="teacher"/>
     <column id="14" parent="6" name="mes_TestID">
       <Position>1</Position>

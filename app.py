@@ -28,7 +28,7 @@ def hello_world():
 @app.route('/testdb')
 def testdb():
     cur = g.db.execute('select * from exam_type')
-    entries = [dict(title = row[0], text = row[1]) for row in cur.fetchall()]
+    entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
     return str(entries)
 
 
