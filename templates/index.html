@@ -8,6 +8,8 @@
         src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
 <script type="text/javascript"
         src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -184,10 +186,20 @@
         var myIcon = new BMap.Icon("http://lbsyun.baidu.com/jsdemo/img/fox.gif", new BMap.Size(300, 157));
         var marker2 = new BMap.Marker(pt, {icon: myIcon});
         map.addOverlay(marker2);
-        // 
+        //
         markers.push(new BMap.Marker(pt));
     }
     var markerClusterer = new BMapLib.MarkerClusterer(map, {markers: markers});
+</script>
+<script type="text/javascript">
+    $.ajax({
+        url: "testdb",
+        type:"post",
+        dataType:"json",
+        success:function (result) {
+            console.log(result)
+        }
+    })
 </script>
 {#<script type="text/javascript" src="/static/js/test.js"></script>#}
 </html>
