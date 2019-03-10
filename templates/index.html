@@ -2,37 +2,169 @@
 <html lang="en">
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 {#<script type="text/javascript" src="/static/js/d3.js"></script>#}
+<script type="text/javascript"
+        src="https://api.map.baidu.com/api?ak=0SDCjoKHYfj6gzmELgkHI46OwrBIUjkP&v=2.0&s=1&services=false"></script>
 
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
-        body{
+        body {
             margin: 0;
             padding: 0;
         }
     </style>
 </head>
 <body>
-    <div>
-        <!--布局结构为左中右，左侧三栏，右侧三栏-->
-        <div style="width: 20%;float: left;height: 100vh;background: #fff">
-            <div style="height: 33.3%;background: darkgrey"></div>
-            <div style="height: 33.3%;background: bisque"></div>
-            <div style="height: 33.3%;background: darkgrey"></div>
-        </div>
-
-        <div style="width: 60%;float: left;height: 100vh;background: #30323c">
-
-        </div>
-
-        <div style="width: 20%;float: right;height: 100vh;background: #fff">
-            <div style="height: 33.3%;background: darkgrey"></div>
-            <div style="height: 33.3%;background: bisque"></div>
-            <div style="height: 33.3%;background: darkgrey"></div>
-        </div>
+<div>
+    <!--布局结构为左中右，左侧三栏，右侧三栏-->
+    <div style="width: 20%;float: left;height: 100vh;background: #fff">
+        <div style="height: 33.3%;background: darkgrey"></div>
+        <div style="height: 33.3%;background: bisque"></div>
+        <div style="height: 33.3%;background: darkgrey"></div>
     </div>
+
+    <div style="width: 60%;float: left;height: 100vh;background: #30323c">
+        <div id="container" style="height: 100vh"></div>
+    </div>
+
+    <div style="width: 20%;float: right;height: 100vh;background: #fff">
+        <div style="height: 33.3%;background: darkgrey"></div>
+        <div style="height: 33.3%;background: bisque"></div>
+        <div style="height: 33.3%;background: darkgrey"></div>
+    </div>
+</div>
 </body>
+<script type="text/javascript">
+    var map = new BMap.Map("container");
+    // 创建地图实例
+    var point = new BMap.Point(116.404, 39.915);
+    // 创建点坐标
+    map.centerAndZoom(point, 15);
+    // 初始化地图，设置中心点坐标和地图级别
+    map.enableScrollWheelZoom(true);
+    var myStyleJson = [
+        {
+            "featureType": "land",
+            "elementType": "geometry",
+            "stylers": {
+                "color": "#212121"
+            }
+        },
+        {
+                    "featureType": "building",
+                    "elementType": "geometry",
+                    "stylers": {
+                              {#"color": "#2b2b2b"#}
+                        "visibility": "off"
+                    }
+          },
+        {
+                    "featureType": "highway",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+        {
+                    "featureType": "arterial",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "green",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+        {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "color": "#181818"
+                    }
+          },
+          {
+                    "featureType": "subway",
+                    "elementType": "geometry.stroke",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+        {
+                    "featureType": "railway",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": {
+                              "color": "#313131"
+                    }
+          },
+        {
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": {
+                              "color": "#8b8787"
+                    }
+          },
+          {
+                    "featureType": "manmade",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+        {
+                    "featureType": "local",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "lightness": -75,
+                              "saturation": -91
+                    }
+          },
+          {
+                    "featureType": "subway",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+        {
+                    "featureType": "railway",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "boundary",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "color": "#8b8787",
+                              "weight": "1",
+                              "lightness": -29
+                    }
+          },
+        {
+                    "featureType": "poilabel",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+    ];
+    map.setMapStyle({styleJson: myStyleJson});
+
+
+</script>
 {#<script type="text/javascript" src="/static/js/test.js"></script>#}
 </html>
 
