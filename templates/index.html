@@ -26,9 +26,15 @@
         .anchorBL {
             display: none;
         }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
+
 <div>
     <!--布局结构为左中右，左侧三栏，右侧三栏-->
     <div style="width: 20%;float: left;height: 100vh;background: #fff">
@@ -49,7 +55,7 @@
 </div>
 </body>
 <script type="text/javascript">
-    var map = new BMap.Map("container");
+    var map = new BMap.Map("container", {});
     // 创建地图实例
     var point = new BMap.Point(116.404, 39.915);
     // 创建点坐标
@@ -176,31 +182,24 @@
     ];
     map.setMapStyle({styleJson: myStyleJson});
 
-    var MAX = 1000;
-    var markers = [];
-    var pt = null;
-    var i = 0;
-    for (; i < MAX; i++) {
-        pt = new BMap.Point(Math.random() * 40 + 85, Math.random() * 30 + 21);
-        // 狐狸🦊
-        var myIcon = new BMap.Icon("http://lbsyun.baidu.com/jsdemo/img/fox.gif", new BMap.Size(300, 157));
-        var marker2 = new BMap.Marker(pt, {icon: myIcon});
-        map.addOverlay(marker2);
-        //
-        markers.push(new BMap.Marker(pt));
-    }
-    var markerClusterer = new BMapLib.MarkerClusterer(map, {markers: markers});
+    {#var MAX = 1000;#}
+    {#var markers = [];#}
+    {#var pt = null;#}
+    {#var i = 0;#}
+    {#for (; i < MAX; i++) {#}
+    {#    pt = new BMap.Point(Math.random() * 40 + 85, Math.random() * 30 + 21);#}
+    {#    // 狐狸🦊#}
+    {#    var myIcon = new BMap.Icon("http://lbsyun.baidu.com/jsdemo/img/fox.gif", new BMap.Size(300, 157));#}
+    {#var marker2 = new BMap.Marker(pt, {icon: myIcon});#}
+    {#map.addOverlay(marker2);#}
+    {#    //#}
+    {#    markers.push(new BMap.Marker(pt,{icon: myIcon}));}#}
+    {##}
+    {#var markerClusterer = new BMapLib.MarkerClusterer(map, {markers: markers});#}
 </script>
 <script type="text/javascript">
-    $.ajax({
-        url: "testdb",
-        type:"post",
-        dataType:"json",
-        success:function (result) {
-            console.log(result)
-        }
-    })
+
 </script>
-{#<script type="text/javascript" src="/static/js/test.js"></script>#}
+<script type="text/javascript" src="/static/js/getLocation.js"></script>
 </html>
 

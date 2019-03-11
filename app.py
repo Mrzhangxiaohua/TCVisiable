@@ -27,8 +27,8 @@ def hello_world():
 
 @app.route('/testdb', methods=['post'])
 def testdb():
-    cur = g.db.execute('select * from exam_type')
-    entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
+    cur = g.db.execute('select * from student_info')
+    entries = [dict(bf_StudentID=row[0], bf_NativePlace=row[6]) for row in cur.fetchall()]
     return json.dumps(entries)
 
 
