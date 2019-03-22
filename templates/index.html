@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-{#<script type="text/javascript" src="/static/js/d3.js"></script>#}
+{#<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.min.js"></script>#}
+<script src="/static/js/echarts.min.js"></script>
 <script type="text/javascript"
         src="https://api.map.baidu.com/api?ak=0SDCjoKHYfj6gzmELgkHI46OwrBIUjkP&v=2.0&s=1&services=false"></script>
 <script type="text/javascript"
         src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
 <script type="text/javascript"
         src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -37,29 +39,32 @@
 
 <div>
     <!--布局结构为左中右，左侧三栏，右侧三栏-->
-    <div style="width: 20%;float: left;height: 100vh;background: #fff">
+    <div style="width: 25%;float: left;height: 100vh;background: #fff">
         <div style="height: 33.3%;background: darkgrey"></div>
         <div style="height: 33.3%;background: bisque"></div>
-        <div style="height: 33.3%;background: darkgrey"></div>
+        <div id="left3" style="height: 33.3%;background: gray"></div>
     </div>
 
-    <div style="width: 60%;float: left;height: 100vh;background: #30323c">
+    <div style="width: 50%;float: left;height: 100vh;background: #30323c">
         <div id="container" style="height: 100vh"></div>
     </div>
 
-    <div style="width: 20%;float: right;height: 100vh;background: #fff">
+    <div style="width: 25%;float: right;height: 100vh;background: #fff">
         <div style="height: 33.3%;background: darkgrey"></div>
         <div style="height: 33.3%;background: bisque"></div>
         <div style="height: 33.3%;background: darkgrey"></div>
     </div>
 </div>
 </body>
+<script type="text/javascript" src="/static/js/gradeChart.js">
+
+</script>
 <script type="text/javascript">
     var map = new BMap.Map("container", {});
     // 创建地图实例
-    var point = new BMap.Point(116.404, 39.915);
+    var point = new BMap.Point(103.802, 35.915);
     // 创建点坐标
-    map.centerAndZoom(point, 15);
+    map.centerAndZoom(point, 5);
     // 初始化地图，设置中心点坐标和地图级别
     map.enableScrollWheelZoom(true);
     var myStyleJson = [
@@ -181,25 +186,10 @@
         },
     ];
     map.setMapStyle({styleJson: myStyleJson});
-
-    {#var MAX = 1000;#}
-    {#var markers = [];#}
-    {#var pt = null;#}
-    {#var i = 0;#}
-    {#for (; i < MAX; i++) {#}
-    {#    pt = new BMap.Point(Math.random() * 40 + 85, Math.random() * 30 + 21);#}
-    {#    // 狐狸🦊#}
-    {#    var myIcon = new BMap.Icon("http://lbsyun.baidu.com/jsdemo/img/fox.gif", new BMap.Size(300, 157));#}
-    {#var marker2 = new BMap.Marker(pt, {icon: myIcon});#}
-    {#map.addOverlay(marker2);#}
-    {#    //#}
-    {#    markers.push(new BMap.Marker(pt,{icon: myIcon}));}#}
-    {##}
-    {#var markerClusterer = new BMapLib.MarkerClusterer(map, {markers: markers});#}
 </script>
-<script type="text/javascript">
-
+<script type="text/javascript" src="/static/js/getLocation.js">
 </script>
-<script type="text/javascript" src="/static/js/getLocation.js"></script>
+<script type="text/javascript" src="/static/js/stuGrade.js">
+</script>
 </html>
 

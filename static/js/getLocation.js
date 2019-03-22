@@ -33,14 +33,15 @@ $.ajax({
             getLocation(j)
         }
 
-
         var pointCollection = new BMap.PointCollection(points, options);
         map.addOverlay(pointCollection);
         console.log(stuLocation)
 
         pointCollection.addEventListener('click', function (e) {
             // console.log(stuLocation[e.point.lng + ',' + e.point.lat])
-            alert('单击点的坐标为：' + e.point.lng + ',' + e.point.lat + "学生ID" + stuLocation[e.point.lng + ',' + e.point.lat]['stuId']);  // 监听点击事件
+            var stuId = stuLocation[e.point.lng + ',' + e.point.lat]['stuId'];
+            grade(stuId);
+            // alert('单击点的坐标为：' + e.point.lng + ',' + e.point.lat + "学生ID" + stuLocation[e.point.lng + ',' + e.point.lat]['stuId']);  // 监听点击事件
         });
     }
 })

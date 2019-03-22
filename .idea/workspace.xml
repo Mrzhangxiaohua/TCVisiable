@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f91abb52-9d24-40f8-ab90-9acffa4d83d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Mr_fa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/gradeChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/stuGrade.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/getLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/getLocation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,67 +49,63 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="chengji: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="exam_type: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
+  <component name="DockManager">
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/static/js/gradeChart.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="24">
+                    <caret line="1" column="69" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="69" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="202" column="61" selection-start-line="202" selection-start-column="61" selection-end-line="202" selection-end-column="61" />
+            <state relative-caret-position="240">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#1980#4881#0#HTML" />
+                <element signature="n#script#1;n#html#0;n#!!top" />
+                <element signature="n#script#2;n#html#0;n#!!top" />
+                <element signature="n#script#3;n#html#0;n#!!top" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#5;n#html#0;n#!!top" />
+                <element signature="n#script#6;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/js/getLocation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/testData/city.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/student_info">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -126,6 +127,7 @@
       <find>json</find>
       <find>attr</find>
       <find>points</find>
+      <find>2017-2学期考察科成绩</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,21 +142,23 @@
         <option value="$PROJECT_DIR$/app/secure.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/static/testData/city.json" />
+        <option value="$PROJECT_DIR$/static/testData/a.txt" />
+        <option value="$PROJECT_DIR$/static/js/getLocation.js" />
         <option value="$PROJECT_DIR$/static/js/test.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/static/js/gradeChart.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/52fa617f-8939-4483-a1f3-dd07e3937e03/console.sql" />
-        <option value="$PROJECT_DIR$/static/testData/a.txt" />
+        <option value="$PROJECT_DIR$/static/js/stuGrade.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/static/js/getLocation.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2904" />
+    <option name="height" value="1584" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,11 +177,6 @@
             <path>
               <item name="tianchiVisiable" type="b2602c69:ProjectViewProjectNode" />
               <item name="tianchiVisialble" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tianchiVisiable" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tianchiVisialble" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -185,12 +184,6 @@
               <item name="tianchiVisialble" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tianchiVisiable" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tianchiVisialble" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="testData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tianchiVisiable" type="b2602c69:ProjectViewProjectNode" />
@@ -210,16 +203,16 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\codeProjectWorkPlace\PycharmProjects\tianchiVisialble" />
-      <recent name="E:\codeProjectWorkPlace\PycharmProjects\tianchiVisialble\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\codeProjectWorkPlace\PycharmProjects\tianchiVisialble\static\js" />
       <recent name="E:\codeProjectWorkPlace\PycharmProjects\tianchiVisialble\static\testData" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\codeProjectWorkPlace\PycharmProjects\tianchiVisialble" />
+      <recent name="E:\codeProjectWorkPlace\PycharmProjects\tianchiVisialble\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -294,7 +287,13 @@
       <workItem from="1552031676544" duration="6806000" />
       <workItem from="1552185080303" duration="9813000" />
       <workItem from="1552268774536" duration="207000" />
-      <workItem from="1552270199873" duration="27119000" />
+      <workItem from="1552270199873" duration="27287000" />
+      <workItem from="1552397191925" duration="734000" />
+      <workItem from="1552443129254" duration="159000" />
+      <workItem from="1552461133007" duration="26000" />
+      <workItem from="1552908576041" duration="8503000" />
+      <workItem from="1553044930782" duration="1857000" />
+      <workItem from="1553131425001" duration="33534000" />
     </task>
     <task id="LOCAL-00001" summary="数据库数据已配置，可正常连接sqlite并完成查询测试">
       <created>1551337935667</created>
@@ -345,11 +344,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552220838697</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="完成地图的绘制及其点的触发操作，可以记录经纬度，学生的ID">
+      <created>1552313438707</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552313438707</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111640000" />
+    <option name="totallyTimeSpent" value="156621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,7 +370,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14978679" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -378,14 +384,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.28494042" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286334" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.36876357" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19414316" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3275488" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32104123" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.15031983" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.22761194" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +405,8 @@
     <MESSAGE value="去除地图水印" />
     <MESSAGE value="地图可以绘制定点，当前以狐狸为坐标定位icon" />
     <MESSAGE value="修正后端查询结果，并返回json数据给前端，前端异步加载数据，可进行操作。" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正后端查询结果，并返回json数据给前端，前端异步加载数据，可进行操作。" />
+    <MESSAGE value="完成地图的绘制及其点的触发操作，可以记录经纬度，学生的ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成地图的绘制及其点的触发操作，可以记录经纬度，学生的ID" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/web/book.py" />
@@ -413,6 +420,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2ba0629d-974f-4259-97ab-ddff7a2eb76e/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/software/Anaconda3/Lib/site-packages/spyder/utils/help/js/mathjax/config/TeX-MML-AM_HTMLorMML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="80" column="2743" selection-start-line="80" selection-start-column="2743" selection-end-line="80" selection-end-column="2743" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/software/Anaconda3/Lib/site-packages/notebook/static/components/codemirror/lib/codemirror.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="8181" column="4" selection-start-line="8181" selection-start-column="4" selection-end-line="8181" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/testData/city.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/echarts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/d3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-987">
+          <caret line="2835" column="31" selection-start-line="2835" selection-start-column="31" selection-end-line="2835" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/gradeChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="69" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/testData/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/exam_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/52fa617f-8939-4483-a1f3-dd07e3937e03/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/chengji">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/student_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/sqlite_master">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -420,7 +528,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/teacher">
+    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/kaoqintype">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -434,110 +542,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2ba0629d-974f-4259-97ab-ddff7a2eb76e/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/exam_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/chengji">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$PROJECT_DIR$/static/js/stuGrade.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/software/Anaconda3/Lib/site-packages/spyder/utils/help/js/mathjax/config/TeX-MML-AM_HTMLorMML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="80" column="2743" selection-start-line="80" selection-start-column="2743" selection-end-line="80" selection-end-column="2743" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/d3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="2835" column="17" selection-start-line="2835" selection-start-column="13" selection-end-line="2835" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/software/Anaconda3/Lib/site-packages/notebook/static/components/codemirror/lib/codemirror.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="8181" column="4" selection-start-line="8181" selection-start-column="4" selection-end-line="8181" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/52fa617f-8939-4483-a1f3-dd07e3937e03/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/testData/a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="600">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/testData/city.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://52fa617f-8939-4483-a1f3-dd07e3937e03/schema/main/table/student_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="202" column="61" selection-start-line="202" selection-start-column="61" selection-end-line="202" selection-end-column="61" />
-          <folding>
-            <element signature="e#1980#4881#0#HTML" />
+            <element signature="e#2261#2585#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/getLocation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+        <state relative-caret-position="152">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#html#0;n#!!top" />
+            <element signature="n#script#3;n#html#0;n#!!top" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#5;n#html#0;n#!!top" />
+            <element signature="n#script#6;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
