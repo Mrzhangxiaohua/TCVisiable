@@ -24,6 +24,9 @@ def teardown_request(exception):
 def hello_world():
     return render_template('index.html')
 
+@app.route('/course')
+def course():
+    return render_template('course.html')
 
 @app.route('/testdb', methods=['post'])
 def testdb():
