@@ -1,3 +1,4 @@
+// 成绩js，展示学生成绩左下角的数据
 function grade(data) {
     alert(data)
     var data = data;

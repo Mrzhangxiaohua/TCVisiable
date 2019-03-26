@@ -1,3 +1,4 @@
+// 地图js,主界面的地图交互，取学生id
 var options = {
     size: BMAP_POINT_SIZE_SMALL,
     shape: BMAP_POINT_SHAPE_STAR,

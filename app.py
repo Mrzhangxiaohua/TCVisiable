@@ -2,6 +2,7 @@ from flask import Flask, current_app, g, render_template, jsonify, request
 import sqlite3, json
 
 app = Flask(__name__)
+app.config.from_object('config')
 DATABASE = 'data/data.db'
 
 
@@ -24,15 +25,59 @@ def teardown_request(exception):
 def hello_world():
     return render_template('index.html')
 
+
 @app.route('/course')
 def course():
+    seven_select_three = [["政治", "历史", "地理"],
+                          ["政治", "历史", "物理"],
+                          ["政治", "历史", "化学"],
+                          ["政治", "历史", "通用技术"],
+                          ["政治", "地理", "物理"],
+                          ["政治", "地理", "化学"],
+                          ["政治", "地理", "生物"],
+                          ["政治", "地理", "通用技术"],
+                          ["政治", "物理", "化学"],
+                          ["政治", "物理", "生物"],
+                          ["政治", "物理", "通用技术"],
+                          ["政治", "化学", "生物"],
+                          ["政治", "化学", "通用技术"],
+                          ["政治", "生物", "通用技术"],
+                          ["历史", "地理", "物理"],
+                          ["历史", "地理", "化学"],
+                          ["历史", "地理", "生物"],
+                          ["历史", "地理", "通用技术"],
+                          ["历史", "物理", "化学"],
+                          ["历史", "物理", "生物"],
+                          ["历史", "物理", "通用技术"],
+                          ["历史", "化学", "生物"],
+                          ["历史", "化学", "通用技术"],
+                          ["历史", "生物", "通用技术"],
+                          ["地理", "物理", "化学"],
+                          ["地理", "物理", "生物"],
+                          ["地理", "物理", "通用技术"],
+                          ["地理", "化学", "生物"],
+                          ["地理", "化学", "通用技术"],
+                          ["地理", "生物", "通用技术"],
+                          ["物理", "化学", "生物"],
+                          ["物理", "化学", "通用技术"],
+                          ["物理", "生物", "通用技术"],
+                          ["化学", "生物", "通用技术"]]
+    cur = g.db.execute('')
+
     return render_template('course.html')
 
-@app.route('/testdb', methods=['post'])
+@app.route('/group')
+def group():
+    return render_template('group.html')
+
+
+@app.route('/testdb')
 def testdb():
-    cur = g.db.execute('select * from student_info')
-    entries = [dict(bf_StudentID=row[0], bf_NativePlace=row[6]) for row in cur.fetchall()]
-    return json.dumps(entries)
+    sql_test = "select distinct exam_numname from chengji where exam_term='2017-2018-1'AND mes_Z_Score!='' and mes_T_Score!='' and mes_dengdi!=''"
+    cur = g.db.execute(sql_test)
+    entries = [row[0] for row in cur.fetchall()]
+    print(entries)
+    return jsonify(entries)
 
 
 @app.route('/getStuId', methods=['GET', 'POST'])
@@ -51,18 +96,18 @@ def getStuId():
                    for row in cur.fetchall()]
         # 找出学生考试时间类别,语文数学。。。
         sql1 = " select a.mes_sub_name from chengji a left join exam_type b on a.exam_type=b.EXAM_KIND_ID " \
-                   " where mes_StudentID= " + data + " and mes_sub_id !='' and mes_Z_Score!='' group by mes_sub_name "
+               " where mes_StudentID= " + data + " and mes_sub_id !='' and mes_Z_Score!='' group by mes_sub_name "
         cur1 = g.db.execute(sql1)
-        entries1 = [dict(mes_sub_name = row[0]) for row in cur1.fetchall()]
+        entries1 = [dict(mes_sub_name=row[0]) for row in cur1.fetchall()]
         # 找出学生的考试时间
         sql2 = " select distinct a.exam_numname from chengji a left join exam_type b on a.exam_type=b.EXAM_KIND_ID " \
-                   " where mes_StudentID= " + data + " and mes_sub_id !='' and mes_Z_Score!='' "
+               " where mes_StudentID= " + data + " and mes_sub_id !='' and mes_Z_Score!='' "
         cur2 = g.db.execute(sql2)
         entries2 = [dict(exam_numname=row[0]) for row in cur2.fetchall()]
-        d = {"data": entries, "examType": entries1, "examTime":entries2}
+        d = {"data": entries, "examType": entries1, "examTime": entries2}
         return jsonify(d)
     return jsonify('fail')
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
